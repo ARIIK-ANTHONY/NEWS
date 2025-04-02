@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CareerConnect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navdiv">
+                <span class="menu-icon" onclick="toggleMenu()">☰</span>
+                <ul id="menu">
+                    <span class="close-icon" onclick="toggleMenu()"></span>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="index.html#jobs">Job Finder</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section contact" id="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Reach out to us through any of the channels below or send us a message directly.</p>
+        </div>
+    
+        <div class="container">
+            <!-- Contact Information -->
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/anthony-ariik-43812a308" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>LinkedIn</h3>
+                        <p>Anthony Ariik</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <a href="https://github.com/ARIIK-ANTHONY" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>GitHub</h3>
+                        <p>ARIIK-ANTHONY</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <a href="tel:+250794422692">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+250794422692</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <a href="mailto:a.ariik@alustudent.com">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>a.ariik@alustudent.com</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Contact Form -->
+            <div class="contactForm">
+                <form id="contact-form">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="name" required />
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="email" required />
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="message" required></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Send" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |
+            <a href="news.html">News</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <div class="footer-content">
+            <p>&copy; 2025 CareerConnect. All rights reserved.</p>
+            <p>Designed by ARIIK-ANTHONY</p>
+            <a href="#top" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

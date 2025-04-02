@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerConnect - News & Job Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="navdiv">
+            <span class="menu-icon" onclick="toggleMenu()">☰</span>
+            <ul id="menu">
+                <span class="close-icon" onclick="toggleMenu()"></span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="index.html#jobs">Job Finder</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <div class="intro">
+        <h1 class="intro-text">WELCOME TO CAREERCONNECT</h1>
+    </div>
+
+    <!-- News Section -->
+    <div id="news" class="tab-content active">
+        <div class="news-detail">
+            <div>
+                <h2>Stay Informed</h2>
+                <p>
+                    Welcome to CareerConnect, your go-to platform for the latest industry news and remote job opportunities in top cities worldwide.
+                </p>
+            </div>
+        </div>
+        
+        <div class="news-detail">
+            <img src="./images/bo.jpg" alt="Industry News">
+            <div>
+                <h2>
+                    Breaking News in the Industry
+                </h2>
+                <p>
+                    Stay ahead with the latest updates, trends, and innovations shaping industries across the globe.
+                </p>
+                <button onclick="redirectToNews()">Get Latest News</button>
+            </div>
+        </div>
+
+        <div class="news-detail">
+            <div>
+                <h2>Exciting Remote Job Opportunities</h2>
+                <p>
+                    Discover remote job openings in top global cities like London, New York, and Berlin, tailored to your skills and interests.
+                </p>
+                <img src="./images/job.png" alt="Industry News">
+                <button class="tab-button" onclick="showTab('jobs')">Job Finder</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Job Finder Section -->
+    <div id="jobs" class="tab-content">
+        <h2 style="color: blue;">Enter the job title and city name to find your dream remote job.</h2>
+        <input type="text" id="query" placeholder="Job title">
+        <input type="text" id="location" placeholder="Location">
+        <button onclick="searchJobs()">Search Jobs</button>
+        <div class="job-list" id="job-results"></div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Service</a>
+        </div>
+
+        <div class="footer-content">
+            <p>&copy; 2025 CareerConnect. All rights reserved.</p>
+            <p>Designed by ARIIK-ANTHONY</p>
+            <a href="#top" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
