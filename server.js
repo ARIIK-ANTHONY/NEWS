@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 1000;
 
 // Validate environment variables
 function validateEnvVars() {
-    const requiredVars = ["FINDWORK_API_KEY", "NEWS_API_KEY", "RAPIDAPI_KEY"];
+    const requiredVars = ["FINDWORK_API_KEY", "NEWS_API_KEY"];
     const missingVars = requiredVars.filter(key => !process.env[key]);
 
     if (missingVars.length > 0) {
@@ -22,7 +22,6 @@ validateEnvVars();
 
 const FINDWORK_API_KEY = process.env.FINDWORK_API_KEY;
 const NEWS_API_KEY = process.env.NEWS_API_KEY;
-const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY;
 
 app.use(cors());
 app.use(express.json());
