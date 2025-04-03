@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 1000;
 
 // Validate environment variables
 function validateEnvVars() {
-    const requiredVars = ["FINDWORK_API_KEY", "NEWS_API_KEY", "RAPIDAPI_KEY"];
+    const requiredVars = ["FINDWORK_API_KEY", "NEWS_API_KEY"];
     const missingVars = requiredVars.filter(key => !process.env[key]);
 
     if (missingVars.length > 0) {
