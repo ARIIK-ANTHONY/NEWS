@@ -30,6 +30,15 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 20px; /* Added padding for better spacing */
+    padding-top: 20px; /* Added padding for better spacing */
+    height: 100px; /* Set a fixed height for the navbar */
 }
 
 .navdiv {
@@ -449,6 +458,9 @@ input:disabled, textarea:disabled {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     flex-direction: column; /* Stack menu items vertically */
+    width: 100%; /* Full width for dropdown */
+    padding: 10px 0; /* Add padding for dropdown menu */
+    border-radius: var(--border-radius); /* Rounded corners for dropdown */
 }
 
 .close-icon {
@@ -710,3 +722,4 @@ input:disabled, textarea:disabled {
 #jobs {
     display: block;
 }
+
