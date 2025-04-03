@@ -22,7 +22,6 @@ validateEnvVars();
 
 const FINDWORK_API_KEY = process.env.FINDWORK_API_KEY;
 const NEWS_API_KEY = process.env.NEWS_API_KEY;
-const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY;
 
 app.use(cors());
 app.use(express.json());
