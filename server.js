@@ -6,7 +6,7 @@ const morgan = require("morgan");
 require("dotenv").config();
 
 const app = express();
-const PORT = process.env.PORT || 1000;
+const PORT = process.env.PORT || 1001;
 
 // Validate environment variables
 function validateEnvVars() {
@@ -85,6 +85,8 @@ app.get("/api/jobs", async (req, res) => {
     }
 });
 
+app.get('/favicon.ico', (req, res) => res.status(204).end());
+
 // Catch-all route for undefined routes
 app.use((req, res) => {
     res.status(404).json({ error: "Route not found." });
@@ -101,3 +103,7 @@ app.listen(PORT, "0.0.0.0", () => {
     console.log(`✅ Server running on http://0.0.0.0:${PORT}`);
 });
 
+
+app.listen(PORT, () => {
+    console.log(`✅ Server running on http://localhost:${PORT}`);
+});
