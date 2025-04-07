@@ -6,7 +6,7 @@ const morgan = require("morgan");
 require("dotenv").config();
 
 const app = express();
-const PORT = process.env.PORT || 1000;
+const PORT = process.env.PORT || 1001;
 
 // Validate environment variables
 function validateEnvVars() {
