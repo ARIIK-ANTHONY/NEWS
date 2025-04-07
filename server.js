@@ -85,6 +85,8 @@ app.get("/api/jobs", async (req, res) => {
     }
 });
 
+app.get('/favicon.ico', (req, res) => res.status(204).end());
+
 // Catch-all route for undefined routes
 app.use((req, res) => {
     res.status(404).json({ error: "Route not found." });
