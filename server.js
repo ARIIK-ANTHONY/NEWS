@@ -14,7 +14,7 @@ function validateEnvVars() {
     const missingVars = requiredVars.filter(key => !process.env[key]);
 
     if (missingVars.length > 0) {
-        console.error(❌ Missing environment variables: ${missingVars.join(", ")});
+        console.error(`❌ Missing environment variables: ${missingVars.join(", ")}`);
         process.exit(1);
     }
 }
@@ -38,7 +38,7 @@ app.get("/api/news", async (req, res) => {
     const { category = "technology" } = req.query;
 
     try {
-        console.log(Fetching news for category: ${category});
+        console.log(`Fetching news for category: ${category}`);
         const response = await axios.get("https://newsapi.org/v2/top-headlines", {
             params: { category, language: "en", apiKey: NEWS_API_KEY }
         });
@@ -60,14 +60,14 @@ app.get("/api/jobs", async (req, res) => {
     }
 
     try {
-        console.log(Fetching jobs for query: ${query}, location: ${location});
+        console.log(`Fetching jobs for query: ${query}, location: ${location}`);
         const response = await axios.get("https://findwork.dev/api/jobs/", {
-            headers: { Authorization: Token ${FINDWORK_API_KEY} },
+            headers: { Authorization: `Token ${FINDWORK_API_KEY}` },
             params: { search: query, location }
         });
 
         if (!response.data.results || response.data.results.length === 0) {
-            return res.status(200).json({ message: No job listings found in ${location}. Try searching in a different city. });
+            return res.status(200).json({ message: `No job listings found in ${location}. Try searching in a different city.` });
         }
 
         res.json(response.data);
@@ -76,7 +76,7 @@ app.get("/api/jobs", async (req, res) => {
 
         if (error.response) {
             if (error.response.status === 404) {
-                return res.status(200).json({ message: No job listings found in ${location}. Try searching in a different city. });
+                return res.status(200).json({ message: `No job listings found in ${location}. Try searching in a different city.` });
             }
             return res.status(error.response.status).json({ error: error.response.data || "An error occurred while fetching jobs." });
         }
@@ -98,5 +98,5 @@ process.on("SIGINT", () => {
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(✅ Server running on http://localhost:${PORT});
+    console.log(`✅ Server running on http://localhost:${PORT}`);
 });
