@@ -58,7 +58,7 @@ After building the local version, the next step was deployment. I had access to 
 1. **Cloned the app** on both `6405-web-01` and `6405-web-02`
 2. **Installed dependencies** and ran the app using `pm2` for process management
 3. **Configured Nginx** on each server to reverse proxy incoming requests to the local app on port 3000
-4. **Set up HAProxy** on `6405-lb-01` to distribute traffic using a round-robin strategy
+4. **Set up Nginx** on `6405-lb-01` to distribute traffic using a round-robin strategy
 
 ### 🧪 Testing
 
