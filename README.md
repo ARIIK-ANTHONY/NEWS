@@ -45,7 +45,7 @@ npm install
 node server.js
 ```
 
-Then open `http://localhost:3000` in your browser.
+Then open `http://localhost:3001` in your browser.
 
 ---
 
@@ -62,8 +62,8 @@ After building the local version, the next step was deployment. I had access to 
 
 ### 🧪 Testing
 
-Once everything was set up, I tested by hitting the load balancer URL:  
-👉 [`http://6405-lb-01.oneariik.tech`](http://6405-lb-01.oneariik.tech)
+Once everything was set up, I tested by hitting the URL:  
+👉 (http://oneariik.tech)
 
 It successfully routed requests to both web servers, and I confirmed traffic was being balanced.
 
@@ -73,7 +73,8 @@ It successfully routed requests to both web servers, and I confirmed traffic was
 
 | Jobs Page                          | News Page                          |
 |-----------------------------------|-------------------------------------|
-| ![Jobs Screenshot](screenshots/jobs.png) | ![News Screenshot](screenshots/news.png) |
+![image](https://github.com/user-attachments/assets/a66330ce-71b3-483e-b944-2be6706f4a7f)
+ | ![News Screenshot](screenshots/news.png) |
 
 ---
 
