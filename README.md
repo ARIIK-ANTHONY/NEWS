@@ -141,4 +141,4 @@ This project is licensed under MIT — free to use and modify with credit.
 ---
 
 **Built with purpose by ARIIK ANTHONY** ✨  
-🌐(http://oneariik.tech)
+🌐 (http://oneariik.tech)
