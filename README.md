@@ -1,6 +1,6 @@
+# CareerConnect - News & Job Portal
 CareerConnect is a scalable web application that aggregates real-time industry news and remote job opportunities through API integrations. Deployed across two load-balanced servers for high availability.
 
-# CareerConnect - News & Job Portal
 **Live URL:** `https://oneariik.tech`  
 **Demo Video:** [2-minute Walkthrough](https://youtu.be/example)
 
