@@ -74,7 +74,8 @@ It successfully routed requests to both web servers, and I confirmed traffic was
 | Jobs Page                          | News Page                          |
 |-----------------------------------|-------------------------------------|
 ![image](https://github.com/user-attachments/assets/a66330ce-71b3-483e-b944-2be6706f4a7f)
- | ![News Screenshot](screenshots/news.png) |
+ |![image](https://github.com/user-attachments/assets/42d68675-27d9-4075-9c70-378fbd0daa68)
+|
 
 ---
 
